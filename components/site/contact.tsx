@@ -68,19 +68,9 @@ export function Contact() {
             </div>
             <div className="glass rounded-2xl px-5 py-4">
               <dt className="text-muted-foreground">Phone</dt>
-              <dd className="mt-1 flex items-center justify-between gap-2 text-lg">
+              <dd className="mt-1 text-lg">
                 <a href="tel:+918500223222" className="hover:text-primary">
                   +91 8500223222
-                </a>
-                <a
-                  href={SOCIAL_LINKS.whatsapp}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-400 transition-colors hover:bg-emerald-500/20"
-                  aria-label="Chat on WhatsApp"
-                >
-                  <WhatsAppIcon className="size-3.5" />
-                  <span>WhatsApp</span>
                 </a>
               </dd>
             </div>

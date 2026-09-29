@@ -72,46 +72,47 @@ export function SiteFooter() {
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-xs text-muted-foreground sm:flex-row">
           <p>{`© ${new Date().getFullYear()} Redraptor Studios Private Limited. All rights reserved.`}</p>
 
-          <div className="flex items-center gap-3">
-            <a
-              href={SOCIAL_LINKS.whatsapp}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="WhatsApp"
-              className="flex size-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-muted-foreground transition-all hover:-translate-y-0.5 hover:border-emerald-500/40 hover:bg-emerald-500/15 hover:text-emerald-400"
-            >
-              <WhatsAppIcon className="size-4" />
-            </a>
-            <a
-              href={SOCIAL_LINKS.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-              className="flex size-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-muted-foreground transition-all hover:-translate-y-0.5 hover:border-pink-500/40 hover:bg-pink-500/15 hover:text-pink-400"
-            >
-              <InstagramIcon className="size-4" />
-            </a>
-            <a
-              href={SOCIAL_LINKS.facebook}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-              className="flex size-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-muted-foreground transition-all hover:-translate-y-0.5 hover:border-blue-500/40 hover:bg-blue-500/15 hover:text-blue-400"
-            >
-              <FacebookIcon className="size-4" />
-            </a>
-            <a
-              href={SOCIAL_LINKS.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-              className="flex size-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-muted-foreground transition-all hover:-translate-y-0.5 hover:border-sky-500/40 hover:bg-sky-500/15 hover:text-sky-400"
-            >
-              <LinkedInIcon className="size-4" />
-            </a>
+          <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2.5">
+              <a
+                href={SOCIAL_LINKS.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+                className="flex size-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-muted-foreground transition-all hover:-translate-y-0.5 hover:border-emerald-500/40 hover:bg-emerald-500/15 hover:text-emerald-400"
+              >
+                <WhatsAppIcon className="size-4" />
+              </a>
+              <a
+                href={SOCIAL_LINKS.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="flex size-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-muted-foreground transition-all hover:-translate-y-0.5 hover:border-pink-500/40 hover:bg-pink-500/15 hover:text-pink-400"
+              >
+                <InstagramIcon className="size-4" />
+              </a>
+              <a
+                href={SOCIAL_LINKS.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="flex size-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-muted-foreground transition-all hover:-translate-y-0.5 hover:border-blue-500/40 hover:bg-blue-500/15 hover:text-blue-400"
+              >
+                <FacebookIcon className="size-4" />
+              </a>
+              <a
+                href={SOCIAL_LINKS.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="flex size-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-muted-foreground transition-all hover:-translate-y-0.5 hover:border-sky-500/40 hover:bg-sky-500/15 hover:text-sky-400"
+              >
+                <LinkedInIcon className="size-4" />
+              </a>
+            </div>
+            <span>Hyderabad</span>
           </div>
-
-          <p>Hyderabad</p>
         </div>
       </div>
     </footer>
