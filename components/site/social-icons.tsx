@@ -1,7 +1,9 @@
 import React from 'react'
 
 export const SOCIAL_LINKS = {
-  whatsapp: 'https://wa.me/918500223222',
+  whatsapp:
+    'https://wa.me/918500223222?text=' +
+    encodeURIComponent('Hello Redraptor Studios! 👋 I would like to enquire about your design and branding services. 🎨✨ Let’s connect! 🚀'),
   instagram: 'https://www.instagram.com/redraptorstudios?stkn=Ym84dWo5ajJnOWVp',
   facebook: 'https://www.facebook.com/61578672170066/',
   linkedin:
