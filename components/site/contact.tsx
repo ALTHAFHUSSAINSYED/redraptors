@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { ArrowRight } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { SectionLabel } from './section-label'
+import { FacebookIcon, InstagramIcon, LinkedInIcon, WhatsAppIcon, SOCIAL_LINKS } from './social-icons'
 
 const STUDIO_EMAIL = 'enquiries@redraptorstudios.com'
 const serviceOptions = ['Graphic Design', 'Interior Design', 'Arch Viz', 'Digital Marketing', 'Print & OOH']
@@ -67,15 +68,66 @@ export function Contact() {
             </div>
             <div className="glass rounded-2xl px-5 py-4">
               <dt className="text-muted-foreground">Phone</dt>
-              <dd className="mt-1 text-lg">
+              <dd className="mt-1 flex items-center justify-between gap-2 text-lg">
                 <a href="tel:+918500223222" className="hover:text-primary">
                   +91 8500223222
+                </a>
+                <a
+                  href={SOCIAL_LINKS.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-400 transition-colors hover:bg-emerald-500/20"
+                  aria-label="Chat on WhatsApp"
+                >
+                  <WhatsAppIcon className="size-3.5" />
+                  <span>WhatsApp</span>
                 </a>
               </dd>
             </div>
             <div className="glass rounded-2xl px-5 py-4">
               <dt className="text-muted-foreground">Studios</dt>
               <dd className="mt-1 text-lg">Hyderabad - Warangal - Narasaraopet</dd>
+            </div>
+            <div className="glass rounded-2xl px-5 py-4">
+              <dt className="text-muted-foreground">Connect with us</dt>
+              <dd className="mt-3 flex items-center gap-3">
+                <a
+                  href={SOCIAL_LINKS.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp"
+                  className="flex size-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-muted-foreground transition-all hover:-translate-y-0.5 hover:border-emerald-500/40 hover:bg-emerald-500/15 hover:text-emerald-400"
+                >
+                  <WhatsAppIcon className="size-5" />
+                </a>
+                <a
+                  href={SOCIAL_LINKS.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  className="flex size-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-muted-foreground transition-all hover:-translate-y-0.5 hover:border-pink-500/40 hover:bg-pink-500/15 hover:text-pink-400"
+                >
+                  <InstagramIcon className="size-5" />
+                </a>
+                <a
+                  href={SOCIAL_LINKS.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                  className="flex size-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-muted-foreground transition-all hover:-translate-y-0.5 hover:border-blue-500/40 hover:bg-blue-500/15 hover:text-blue-400"
+                >
+                  <FacebookIcon className="size-5" />
+                </a>
+                <a
+                  href={SOCIAL_LINKS.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  className="flex size-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-muted-foreground transition-all hover:-translate-y-0.5 hover:border-sky-500/40 hover:bg-sky-500/15 hover:text-sky-400"
+                >
+                  <LinkedInIcon className="size-5" />
+                </a>
+              </dd>
             </div>
           </dl>
         </div>
