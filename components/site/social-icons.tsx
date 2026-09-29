@@ -4,10 +4,9 @@ export const SOCIAL_LINKS = {
   whatsapp:
     'https://wa.me/918500223222?text=' +
     encodeURIComponent('Hello Redraptor Studios! 👋 I would like to enquire about your design and branding services. 🎨✨ Let’s connect! 🚀'),
-  instagram: 'https://www.instagram.com/redraptorstudios?stkn=Ym84dWo5ajJnOWVp',
+  instagram: 'https://www.instagram.com/redraptorstudios/?hl=en',
   facebook: 'https://www.facebook.com/61578672170066/',
-  linkedin:
-    'https://www.linkedin.com/company/redraptor-studios-private-limited/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAb21jcAUoewRleHRuA2FlbQIxMQBwZG9mAnNydGMGYXBwX2lkDzU2NzA2NzM0MzM1MjQyNwABp7An8-1t1vhfPKqvMm-Upl9g97sP7jB3BQ1YISShmCzENAUUdv3MnriSPqhd_aem_trl0RT-MLejPrsWFvIOYgA',
+  linkedin: 'https://www.linkedin.com/company/redraptor-studios-private-limited/?viewAsMember=true',
 }
 
 export function WhatsAppIcon({ className = 'size-5' }: { className?: string }) {
