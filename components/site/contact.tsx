@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { SectionLabel } from './section-label'
 
-const STUDIO_EMAIL = 'enquire@redraptorstudios.com'
+const STUDIO_EMAIL = 'enquiries@redraptorstudios.com'
 const serviceOptions = ['Graphic Design', 'Interior Design', 'Arch Viz', 'Digital Marketing', 'Print & OOH']
 const budgets = ['< $10k', '$10–25k', '$25–75k', '$75k+']
 

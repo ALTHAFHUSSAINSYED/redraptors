@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const columns = [
   {
     title: 'Services',
@@ -14,10 +16,14 @@ export function SiteFooter() {
       <div className="glass-strong mx-auto max-w-7xl rounded-[2.5rem] px-6 py-14 lg:px-12">
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-5">
-            <p className="font-serif text-7xl leading-[0.95] sm:text-8xl">
-              Redraptor
-              <span className="block text-gradient-red">Studios</span>
-            </p>
+            <div className="relative h-28 w-52 sm:h-36 sm:w-64">
+              <Image
+                src="/images/logo.png"
+                alt="Redraptor Studios"
+                fill
+                className="rounded-2xl object-contain object-left"
+              />
+            </div>
             <p className="mt-4 max-w-xs text-sm text-muted-foreground">
               Graphic design, interiors, architectural visualization and marketing — under one roof.
             </p>
